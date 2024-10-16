@@ -7,11 +7,20 @@
 }
 
 body, html {
-    background-color: #1C2026;
+    background-color: #282e38;
+    height: 100%;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+}
 header{
     background-color: #1C2026;
+    margin-bottom: 10px;
     & h1{
         color: #BF863F;
         text-align: center;
@@ -64,6 +73,7 @@ main {
     padding: 10px;
     border-radius: 10px;
     margin-top: 10px;
+    margin-bottom: 50px;
 
     & article{
         & h2{
@@ -81,5 +91,22 @@ main {
             font-size: 1.2em;
             font-weight: bold;
         }
+    }
+}
+footer{
+    & p{
+        background-color: black;
+        color: white;
+        font-weight: bolder;
+        text-align: center;
+        padding: 10px;
+
+    }
+    & a{
+        text-decoration: none;
+        color: white;
+    }
+    & a:hover{
+        color: #BF863F;
     }
 }
